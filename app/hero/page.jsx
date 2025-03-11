@@ -21,7 +21,8 @@ const Hero = () => {
           loop
           muted
           preload="none"
-          src="/bg-music.mp4" // video
+          
+          src="/output.webm" // video
         />
       </motion.div>
 
