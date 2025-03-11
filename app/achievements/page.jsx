@@ -69,7 +69,7 @@ const Achievements = () => {
               <AchievementCard key={item._id} item={item} />
             ))
           ) : (
-            <p className="text-gray-400 text-center col-span-3">No achievements found.</p>
+            <p className="text-gray-400 text-center col-span-3">Loading...</p>
           )}
         </div>
         
