@@ -8,6 +8,7 @@ const fileID = "1ZgDqOlkmewTzJZqy5xRSd-Lk5gAy1rubU1SRcGmyZqc";
 
 const navItems = [
     { name: "About Us", link: "/" },
+    { name: "Recordings", link: "/recordings" },
     { name: "Achievements", link: "/achievements" },
     { name: "OneHeartians", link: "/oneheartians" },
     { name: "LOA", link: `https://docs.google.com/document/d/${fileID}/export?format=docx`},
