@@ -272,7 +272,7 @@ const Leaderboard = () => {
                             {/* Music Visualizer Background for Active Members */}
                             {!showLegacy && (
                                 <>
-                                    {/* Animated Equalizer Bars */}
+                                    {/* Animated Equalizer Bars - Slowed Down */}
                                     <div className="absolute bottom-0 left-0 right-0 h-16 overflow-hidden opacity-60">
                                         <div className="flex items-end h-full justify-center space-x-1">
                                             {[...Array(25)].map((_, barIndex) => (
@@ -287,92 +287,15 @@ const Leaderboard = () => {
                                                         ]
                                                     }}
                                                     transition={{
-                                                        duration: 0.6 + Math.random() * 0.4,
+                                                        duration: 1.2 + Math.random() * 0.8,
                                                         repeat: Infinity,
-                                                        delay: barIndex * 0.02,
+                                                        delay: barIndex * 0.05,
                                                         ease: "easeInOut"
                                                     }}
                                                 />
                                             ))}
                                         </div>
                                     </div>
-
-                                    {/* Floating Audio Particles */}
-                                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                                        {[...Array(8)].map((_, particleIndex) => (
-                                            <motion.div
-                                                key={particleIndex}
-                                                className="absolute w-2 h-2 rounded-full bg-gradient-to-r from-gray-300/80 to-gray-200/80"
-                                                style={{
-                                                    left: `${Math.random() * 80 + 10}%`,
-                                                    top: `${Math.random() * 80 + 10}%`
-                                                }}
-                                                animate={{
-                                                    y: [0, -30, 0],
-                                                    opacity: [0.3, 1, 0.3],
-                                                    scale: [0.5, 1.2, 0.5]
-                                                }}
-                                                transition={{
-                                                    duration: 2 + Math.random() * 2,
-                                                    repeat: Infinity,
-                                                    delay: particleIndex * 0.3,
-                                                    ease: "easeInOut"
-                                                }}
-                                            />
-                                        ))}
-                                    </div>
-
-                                    {/* Floating Sound Waves */}
-                                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                                        {[...Array(3)].map((_, waveIndex) => (
-                                            <motion.div
-                                                key={waveIndex}
-                                                className="absolute w-full h-0.5 rounded-full"
-                                                style={{
-                                                    top: `${40 + waveIndex * 15}%`,
-                                                    background: `linear-gradient(90deg, transparent, rgba(209,213,219,${0.4 + waveIndex * 0.2}), transparent)`
-                                                }}
-                                                animate={{
-                                                    x: ['-100%', '100%'],
-                                                }}
-                                                transition={{
-                                                    duration: 3 + waveIndex * 0.5,
-                                                    repeat: Infinity,
-                                                    delay: waveIndex * 1,
-                                                    ease: "linear"
-                                                }}
-                                            />
-                                        ))}
-                                    </div>
-
-                                    {/* Pulsing Beat Circles */}
-                                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                                        {[...Array(5)].map((_, beatIndex) => (
-                                            <motion.div
-                                                key={beatIndex}
-                                                className="absolute rounded-full border border-gray-300/60"
-                                                style={{
-                                                    width: `${30 + beatIndex * 20}px`,
-                                                    height: `${30 + beatIndex * 20}px`,
-                                                    left: `${20 + beatIndex * 15}%`,
-                                                    top: `${30 + beatIndex * 10}%`
-                                                }}
-                                                animate={{
-                                                    scale: [0.8, 1.5, 0.8],
-                                                    opacity: [0.2, 0.8, 0.2]
-                                                }}
-                                                transition={{
-                                                    duration: 2.5,
-                                                    repeat: Infinity,
-                                                    delay: beatIndex * 0.4,
-                                                    ease: "easeInOut"
-                                                }}
-                                            />
-                                        ))}
-                                    </div>
-
-                                    {/* Gradient Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/10 via-transparent to-blue-900/10 rounded-2xl"></div>
                                 </>
                             )}
 

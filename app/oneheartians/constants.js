@@ -583,9 +583,6 @@ export const membersStats = [
             email: "srilakshmi@email.com"
         }
     },
-    
-
-
 
 
 ];
