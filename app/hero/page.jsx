@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { FaYoutube } from "react-icons/fa";
 import Footer from "../footer/page";
 
 const Hero = () => {
@@ -51,19 +52,25 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1, duration: 0.5 }}
-          className="mt-6 flex space-x-6 justify-center"
+          className="mt-6 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center items-center px-4"
         >
           <Link href="https://www.instagram.com/oneheart.srmuap" target="_blank">
           <button 
                 
-                className="px-6 py-3 bg-red-600 text-white font-bold rounded-lg shadow-md hover:bg-red-700 transition"
+                className="w-full sm:w-auto px-4 sm:px-6 py-3 bg-red-600 text-white font-bold rounded-lg shadow-md hover:bg-red-700 transition text-sm sm:text-base"
             >
                 Follow Us!
             </button>
 
           </Link>
+          <Link href="https://youtube.com/@oneheartbeats" target="_blank">
+            <button className="w-full sm:w-auto px-4 sm:px-6 py-3 bg-red-600 text-white font-bold rounded-lg shadow-md hover:bg-red-700 transition flex items-center justify-center gap-2 text-sm sm:text-base">
+              <FaYoutube className="text-lg" />
+              Watch Us!
+            </button>
+          </Link>
           <Link href="#team">
-            <button className="px-6 py-3 border border-white text-white font-bold rounded-lg hover:bg-white hover:text-black transition">
+            <button className="w-full sm:w-auto px-4 sm:px-6 py-3 border border-white text-white font-bold rounded-lg hover:bg-white hover:text-black transition text-sm sm:text-base">
               Meet the team
             </button>
           </Link>

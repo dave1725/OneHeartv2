@@ -29,7 +29,7 @@ const Navbar = () => {
                 
                 {/* Logo */}
                 <h1 className="text-2xl">
-                    🎶 OneHeart
+                    OneHeart Club
                 </h1>
 
                 {/* Desktop Menu */}
