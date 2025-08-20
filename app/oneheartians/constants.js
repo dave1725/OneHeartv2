@@ -121,7 +121,7 @@ export const membersStats = [
         stageHours: 1.5,
         image: "https://oneheart123.club-music.workers.dev/?id=1YhMh25hG45s68hP0t0KO_RwgG8tDNpZg",
         desc: "Eastern Singer",
-        status: "active",
+        status: "legacy",
         contact: {
             instagram: "https://instagram.com/adi.seshu_",
             email: "adiseshu@email.com"
