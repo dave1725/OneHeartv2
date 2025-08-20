@@ -5,17 +5,18 @@ import Image from "next/image";
 import toast, { Toaster } from "react-hot-toast";
 
 const coreTeam = [
-    { role: "Mentor", name: "Mr.Venkat", image: "https://oneheart123.club-music.workers.dev/?id=1088JYRKku2ZbhYwLZJwwl1Qpc_0Iy2Fa&sz=w1000" , socials: { discord: "musicteacher1" } },
-    { role: "Convener", name: "Prasanna", image: "https://oneheart123.club-music.workers.dev/?id=1G1uZ1_MOhgvNCtB-QfqT4ix1RrowHCZH&sz=w1000", socials: { instagram: "https://www.instagram.com/prassu_k.k/", discord: "prassukk" } },
-    { role: "Co-Convener", name: "Sadia", image: "https://oneheart123.club-music.workers.dev/?id=1m_GYI6aVvjv85bzDiLU06sg-zp87y2-0&sz=w1000", socials: { instagram: "https://www.instagram.com/sadi.sera/", discord: "sadia.sera_36002" } },
-    { role: "Co-Convener", name: "Murali", image: "https://oneheart123.club-music.workers.dev/?id=1AzDSC-YC81gHAhi3opcwhQ7m43yG_jLz&sz=w1000", socials: { instagram: "https://www.instagram.com/muralixa/", discord: "murali_4_music" } },
+    { role: "Mentor", name: "Mr.Venkat", image: "https://oneheart123.club-music.workers.dev/?id=1C_5zb-uu48AilPERar4FkGiE9GwkNFm9&sz=w1000" , socials: { discord: "musicteacher1" } },
+    { role: "Convener", name: "Prasanna", image: "https://oneheart123.club-music.workers.dev/?id=1bCvHO3UAyF3fNhpAP2WyI2zTgpOUL30R&sz=w1000", socials: { instagram: "https://www.instagram.com/prassu_k.k/", discord: "prassukk" } },
+    { role: "Co-Convener", name: "Sadia", image: "https://oneheart123.club-music.workers.dev/?id=1Ic_PV48ULZoaUP6g945DJKhuYAbvdIfn&sz=w1000", socials: { instagram: "https://www.instagram.com/sadi.sera/", discord: "sadia.sera_36002" } },
+    { role: "Co-Convener", name: "Murali", image: "https://oneheart123.club-music.workers.dev/?id=1iRdK3euyq64g1KODbH_0yaSPhwBwmmvK&sz=w1000", socials: { instagram: "https://www.instagram.com/muralixa/", discord: "murali_4_music" } },
 ];
 
 const socialMediaTeam= [
-    { role: "Social Media Head", name: "[Name]", image: "https://oneheart123.club-music.workers.dev/?id=1G1uZ1_MOhgvNCtB-QfqT4ix1RrowHCZH&sz=w1000", socials: { instagram: "https://www.instagram.com/username/", discord: "username" } },
-    { role: "Website Lead", name: "[Name]", image: "https://oneheart123.club-music.workers.dev/?id=1G1uZ1_MOhgvNCtB-QfqT4ix1RrowHCZH&sz=w1000", socials: { instagram: "https://www.instagram.com/username/", discord: "username" } },
-    { role: "Website Lead", name: "[Name]", image: "https://oneheart123.club-music.workers.dev/?id=1G1uZ1_MOhgvNCtB-QfqT4ix1RrowHCZH&sz=w1000", socials: { instagram: "https://www.instagram.com/username/", discord: "username" } },
-    { role: "Website Lead", name: "[Name]", image: "https://oneheart123.club-music.workers.dev/?id=1G1uZ1_MOhgvNCtB-QfqT4ix1RrowHCZH&sz=w1000", socials: { instagram: "https://www.instagram.com/username/", discord: "username" } },
+    { role: "Social Media Head", name: "Arjun", image: "https://oneheart123.club-music.workers.dev/?id=1as1C2Q-5cWXzCj5Um9HXTsUbW5CqHSVA&sz=w1000", socials: { instagram: "https://www.instagram.com/username/", discord: "username" } },
+    { role: "Videographer & Content", name: "Sri Lakshmi", image: "https://oneheart123.club-music.workers.dev/?id=1BzwiN8Tqk8-RqPKd9bIffnY_Cycl0IXI&sz=w1000", socials: { instagram: "https://www.instagram.com/username/", discord: "username" } },
+    { role: "Content Writer", name: "Ananya", image: "https://oneheart123.club-music.workers.dev/?id=18hi-qXjhKE43jmhO64h0zKOGlJFzA7Dl&sz=w1000", socials: { instagram: "https://www.instagram.com/username/", discord: "username" } },
+    { role: "Video Editor", name: "Maharshi", image: "https://oneheart123.club-music.workers.dev/?id=1M1a8fcE-EEoT2pF5RWV6QnIazbEBVMeY&sz=w1000", socials: { instagram: "https://www.instagram.com/username/", discord: "username" } },
+    { role: "Website Lead", name: "Dave", image: "https://oneheart123.club-music.workers.dev/?id=1GqN2lEry0mDZt69U4wO_yevjtD4Jgf2C&sz=w1000", socials: { instagram: "https://www.instagram.com/username/", discord: "username" } },
 
 ];
 
@@ -34,11 +35,11 @@ const TeamSection = () => {
             <div className="container mx-auto text-center">
                 <h2 className="text-4xl font-bold mb-8">Meet Our Core Team</h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="flex flex-wrap justify-center gap-8">
                     {coreTeam.map((member, index) => (
                         <motion.div 
                             key={index} 
-                            className="p-6 rounded-lg shadow-lg text-center"
+                            className="p-6 rounded-lg shadow-lg text-center w-64 flex-shrink-0"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -80,11 +81,11 @@ const TeamSection = () => {
                 {/* Social Media Team Section */}
                 <div className="mt-16">
                     <h3 className="text-3xl font-bold mb-8">Social Media Team</h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="flex flex-wrap justify-center gap-8">
                         {socialMediaTeam.map((member, index) => (
                             <motion.div 
                                 key={index} 
-                                className="p-6 rounded-lg shadow-lg text-center"
+                                className="p-6 rounded-lg shadow-lg text-center w-64 flex-shrink-0"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6, delay: index * 0.2 }}

@@ -441,6 +441,20 @@ export const membersStats = [
         }
     },
     {
+        id: 1562,
+        name: "Arjun",
+        wins: 0,
+        performances: 15,
+        stageHours: 1.5,
+        image: "https://oneheart123.club-music.workers.dev/?id=1as1C2Q-5cWXzCj5Um9HXTsUbW5CqHSVA&sz=w1000",
+        desc: "Guitarist",
+        status: "active",
+        contact: {
+            instagram: "https://instagram.com/",
+            email: "srilakshmi@email.com"
+        }
+    },
+    {
         id: 36,
         name: "Annapoorneshwari",
         wins: 1,
@@ -583,4 +597,5 @@ export const membersStats = [
             email: "srilakshmi@email.com"
         }
     },
+    
 ];
