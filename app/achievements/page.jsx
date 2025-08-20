@@ -84,7 +84,7 @@ const Achievements = () => {
 const AchievementCard = ({ item }) => {
   return (
     <motion.div 
-      className="p-6 rounded-lg shadow-lg text-center border-2 border-gray-400 bg-gray-800 hover:bg-gray-700 transition-all duration-300"
+      className="p-6 rounded-lg shadow-lg text-center border-2 border-gray-400 bg-gray-800 hover:bg-gray-700 transition-all duration-300 flex flex-col h-full"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.2 }}
@@ -100,15 +100,18 @@ const AchievementCard = ({ item }) => {
       <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
       
       {/* Short Preview of Content */}
-      <div className="text-gray-400 mb-2 px-5 text-left">
-        <PortableText value={item.body.slice(0, 1)} />
+      <div className="text-gray-400 mb-4 px-5 text-left flex-grow">
+        <div className="line-clamp-3">
+          <PortableText value={item.body.slice(0, 1)} />
+        </div>
       </div>
 
-      <Link href={`/achievements/${item._id}`}>
-        <button className="text-red-500 text-sm mt-2 hover:underline">Read More</button>
-      </Link>
-
-      <span className="block text-gray-500 text-sm mt-2">{new Date(item.publishedAt).toDateString()}</span>
+      <div className="mt-auto">
+        <Link href={`/achievements/${item._id}`}>
+          <button className="text-red-500 text-sm hover:underline">Read More</button>
+        </Link>
+        <span className="block text-gray-500 text-sm mt-2">{new Date(item.publishedAt).toDateString()}</span>
+      </div>
     </motion.div>
   );
 };

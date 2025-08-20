@@ -10,6 +10,7 @@ const navItems = [
     { name: "About Us", link: "/" },
     { name: "Recordings", link: "/recordings" },
     { name: "Achievements", link: "/achievements" },
+    // { name: "Gallery", link: "/gallery" },
     { name: "OneHeartians", link: "/oneheartians" },
     { name: "LOA", link: `https://docs.google.com/document/d/${fileID}/export?format=docx`},
 ];
