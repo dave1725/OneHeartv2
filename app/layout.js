@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "./footer/page";
 import Navbar from "./navbar/page";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Analytics />
+        <SpeedInsights />
         <Footer />
       </body>
     </html>
